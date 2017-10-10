@@ -1,0 +1,5 @@
+The commands 'google-chrome' and 'gimp' are already added in Ubuntu Linux. When you type them into the the terminal command line, they will open up the Google Chrome web browser and GIMP.
+To add them as an alias in the .bashrc file, simply add:
+
+alias google-chrome='path/to/google/chrome/executable'
+alias gimp='path/to/gimp/executable'

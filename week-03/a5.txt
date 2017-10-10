@@ -1,0 +1,171 @@
+proc/cpuinfo: Contains details about individual cpu cores.
+Note this is only a snippet of the contents
+
+landon@Hackintosh:~/Desktop$ cat /proc/cpuinfo
+processor : 0
+vendor_id : GenuineIntel
+cpu family : 6
+model : 60
+model name : Intel(R) Core(TM) i7-4710MQ CPU @ 2.50GHz
+stepping : 3
+microcode : 0x17
+cpu MHz : 800.000
+cache size : 6144 KB
+physical id : 0
+siblings : 8
+core id : 0
+cpu cores : 4
+apicid : 0
+initial apicid : 0
+fpu : yes
+fpu_exception : yes
+cpuid level : 13
+wp : yes
+flags : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips : 4988.27
+clflush size : 64
+cache_alignment : 64
+address sizes : 39 bits physical, 48 bits virtual
+power management:
+
+
+/proc/mounts: Shows the file systems and devices that are mounted
+
+landon@Hackintosh:~/Desktop$ cat /proc/mounts
+rootfs / rootfs rw 0 0
+sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+udev /dev devtmpfs rw,relatime,size=8164752k,nr_inodes=2041188,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
+tmpfs /run tmpfs rw,nosuid,noexec,relatime,size=1635236k,mode=755 0 0
+/dev/disk/by-uuid/7c1c623e-3f60-41ee-89d5-8a35d91fb6fe / ext4 rw,noatime,errors=remount-ro,data=ordered 0 0
+none /sys/fs/cgroup tmpfs rw,relatime,size=4k,mode=755 0 0
+none /sys/fs/fuse/connections fusectl rw,relatime 0 0
+none /sys/kernel/debug debugfs rw,relatime 0 0
+none /sys/kernel/security securityfs rw,relatime 0 0
+none /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k 0 0
+none /run/shm tmpfs rw,nosuid,nodev,relatime 0 0
+none /run/user tmpfs rw,nosuid,nodev,noexec,relatime,size=102400k,mode=755 0 0
+none /sys/fs/pstore pstore rw,relatime 0 0
+systemd /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,name=systemd 0 0
+vmware-vmblock /run/vmblock-fuse fuse.vmware-vmblock rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other 0 0
+gvfsd-fuse /run/user/1000/gvfs fuse.gvfsd-fuse rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+
+
+
+/proc/partitions: Shows the partitions on volumes.
+
+major minor  #blocks  name
+
+  11        0    1048575 sr0
+   8        0  976762584 sda
+   8        1  972566528 sda1
+   8        2    4194304 sda2
+
+
+/proc/filesystems: Shows file systems that are configured/supported into/by the kernel.
+
+landon@Hackintosh:~/Desktop$ cat /proc/filesystems
+nodev sysfs
+nodev rootfs
+nodev ramfs
+nodev bdev
+nodev proc
+nodev cgroup
+nodev cpuset
+nodev tmpfs
+nodev devtmpfs
+nodev debugfs
+nodev securityfs
+nodev sockfs
+nodev pipefs
+nodev anon_inodefs
+nodev devpts
+ ext3
+ ext2
+ ext4
+nodev hugetlbfs
+ vfat
+nodev ecryptfs
+ fuseblk
+nodev fuse
+nodev fusectl
+nodev pstore
+nodev mqueue
+ btrfs
+
+/proc/meminfo: Has information about memory usage, both physical and swap.
+
+landon@Hackintosh:~/Desktop$ cat /proc/meminfo
+MemTotal:       16352324 kB
+MemFree:        12733592 kB
+Buffers:          336932 kB
+Cached:          1506928 kB
+SwapCached:            0 kB
+Active:          1976008 kB
+Inactive:        1202544 kB
+Active(anon):    1337072 kB
+Inactive(anon):   445296 kB
+Active(file):     638936 kB
+Inactive(file):   757248 kB
+Unevictable:          64 kB
+Mlocked:              64 kB
+SwapTotal:       4194300 kB
+SwapFree:        4194300 kB
+Dirty:               148 kB
+Writeback:             0 kB
+AnonPages:       1334868 kB
+Mapped:           329704 kB
+Shmem:            447668 kB
+Slab:             258812 kB
+SReclaimable:     220456 kB
+SUnreclaim:        38356 kB
+KernelStack:        4544 kB
+PageTables:        39196 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12370460 kB
+Committed_AS:    5947308 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      373968 kB
+VmallocChunk:   34359352408 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    280576 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       94540 kB
+DirectMap2M:     2969600 kB
+DirectMap1G:    13631488 kB
+
+
+/proc/net: A directory that contains information about network protocols.
+
+landon@Hackintosh:~/Desktop$ ls /proc/net
+anycast6  connector  dev_snmp6     hci    if_inet6  ip6_flowlabel  ip_mr_cache  l2cap      netfilter  packet     psched  raw6    rt6_stats  sco    sockstat      stat  udp      udplite6
+arp       dev        fib_trie      icmp   igmp      ip6_mr_cache   ip_mr_vif    mcfilter   netlink    pnp        ptype   rfcomm  rt_acct    snmp   sockstat6     tcp   udp6     unix
+bnep      dev_mcast  fib_triestat  icmp6  igmp6     ip6_mr_vif     ipv6_route   mcfilter6  netstat    protocols  raw     route   rt_cache   snmp6  softnet_stat  tcp6  udplite  wireless
+
+
+/proc/stat: Contains the overall/various statistics about the system, such as the number of page faults since the system was booted.
+
+landon@Hackintosh:~/Desktop$ cat /proc/stat
+cpu  100617 1083 24314 4045138 34528 0 31 0 0 0
+cpu0 14968 50 3626 502321 3737 0 14 0 0 0
+cpu1 16180 3 3207 503380 2900 0 4 0 0 0
+cpu2 16341 0 3117 504399 1813 0 0 0 0 0
+cpu3 15135 48 3344 504765 1788 0 1 0 0 0
+cpu4 9703 116 5119 503413 8021 0 1 0 0 0
+cpu5 9964 817 2062 503825 9482 0 4 0 0 0
+cpu6 8750 19 1913 514543 770 0 0 0 0 0
+cpu7 9573 26 1925 508488 6014 0 4 0 0 0
+intr 2677682 17 7872 0 0 0 0 0 0 1 20444 0 0 23177 0 0 0 31 0 0 0 0 0 0 37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152713 24 0 130772 13 233864 279156 258 491 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ctxt 15330554
+btime 1425675663
+processes 5059
+procs_running 2
+procs_blocked 1
+softirq 1112335 8 482260 124 8162 130778 0 7926 184568 3469 295040

@@ -1,0 +1,11 @@
+External fragmentation
+Total memory space is enough to satisfy a request or to reside a process in it, but it is not contiguous so it can not be used.
+
+(IMAGE)
+
+Internal fragmentation
+Memory block assigned to process is bigger. Some portion of memory is left unused as it can not be used by another process.
+
+(IMAGE)
+
+http://stackoverflow.com/questions/1200694/internal-and-external-fragmentation

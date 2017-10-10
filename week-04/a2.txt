@@ -1,0 +1,1 @@
+External fragmentation is reduced by compaction because it moves memory around until it is all placed together in one block.

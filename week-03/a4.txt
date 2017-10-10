@@ -1,0 +1,124 @@
+* NOTE:    I cut out some of the results. But this should give a good example of a long list and what it looks like and does.
+
+landon@Hackintosh:~$ ls -al /usr/bin
+total 435080
+drwxr-xr-x  2 root   root       69632 Mar  2 15:36 .
+drwxr-xr-x 10 root   root        4096 Jul 22  2014 ..
+lrwxrwxrwx  1 root   root           8 Aug  7  2014 2to3 -> 2to3-2.7
+-rwxr-xr-x  1 root   root          96 Mar 22  2014 2to3-2.7
+-rwxr-xr-x  1 root   root          96 Apr 11  2014 2to3-3.4
+-rwxr-xr-x  1 root   root       10320 Feb  7  2013 411toppm
+-rwxr-xr-x  1 root   root          39 Feb 17  2012 7z
+-rwxr-xr-x  1 root   root          40 Feb 17  2012 7za
+-rwxr-xr-x  1 root   root      106296 Mar 27  2014 a2p
+-rwxr-xr-x  1 root   root       19008 Jan 16  2014 aconnect
+-rwxr-xr-x  1 root   root       15008 Apr  3  2014 acpi_listen
+-rwxr-xr-x  1 root   root      194216 Jan 28 15:40 activity-log-manager
+-rwxr-xr-x  1 root   root        6123 Jan 21 06:44 add-apt-repository
+-rwxr-xr-x  1 root   root        6280 Feb 12 11:53 addpart
+lrwxrwxrwx  1 root   root          10 Jan 27  2014 add-patch -> edit-patch
+-rwxr-xr-x  1 root   root       27696 Feb  9 04:36 addr2line
+-rwxr-xr-x  1 root   root       31424 Jan 22  2014 afm2pl
+-rwxr-xr-x  1 root   root       38008 Jan 22  2014 afm2tfm
+-rwxr-xr-x  1 root   root      491664 Jan 22  2014 aleph
+lrwxrwxrwx  1 root   root          52 Feb 17  2014 allcm -> ../share/texlive/texmf-dist/scripts/texlive/allcm.sh
+lrwxrwxrwx  1 root   root           5 Feb 17  2014 allec -> allcm
+lrwxrwxrwx  1 root   root          56 Feb 17  2014 allneeded -> ../share/texlive/texmf-dist/scripts/texlive/allneeded.sh
+-rwxr-xr-x  1 root   root       73184 Jan 16  2014 alsaloop
+-rwxr-xr-x  1 root   root       65456 Jan 16  2014 alsamixer
+-rwxr-xr-x  1 root   root       15072 Jan 16  2014 alsaucm
+-rwxr-xr-x  1 root   root       19008 Jan 16  2014 amidi
+-rwxr-xr-x  1 root   root       52664 Jan 16  2014 amixer
+-rwxr-xr-x  1 root   root        2668 Oct 10  2013 amuFormat.sh
+lrwxrwxrwx  1 root   root          25 Aug 28  2014 animate -> /etc/alternatives/animate
+-rwxr-xr-x  1 root   root        6320 Mar  6  2014 animate.im6
+-rwxr-xr-x  1 root   root        1858 Jan 27  2014 annotate-output
+-rwxr-xr-x  1 root   root        5680 Feb  7  2013 anytopnm
+-rwxr-xr-x  1 root   root         276 Jan 10  2014 apg
+-rwxr-xr-x  1 root   root       31488 Jan 10  2014 apgbfm
+-rwxr-xr-x  1 root   root       60808 Jan 16  2014 aplay
+-rwxr-xr-x  1 root   root       23152 Jan 16  2014 aplaymidi
+lrwxrwxrwx  1 root   root          53 Feb 25 15:48 apm -> ../share/atom/resources/app/apm/node_modules/.bin/apm
+lrwxrwxrwx  1 root   root          30 Sep  4  2014 appletviewer -> /etc/alternatives/appletviewer
+-rwxr-xr-x  1 root   root       14648 Feb 11  2014 applycal
+-rwxr-xr-x  1 root   root        2671 Feb  7 08:57 apport-bug
+-rwxr-xr-x  1 root   root       12566 Feb  7 08:59 apport-cli
+lrwxrwxrwx  1 root   root          10 Feb  7 08:59 apport-collect -> apport-bug
+-rwxr-xr-x  1 root   root        1622 Feb  7 08:59 apport-unpack
+-rwxr-xr-x  1 root   root       10440 Aug 16  2013 appres
+lrwxrwxrwx  1 root   root           6 Sep 23 10:43 apropos -> whatis
+-rwxr-xr-x  1 root   root       14832 Oct 28 14:56 apt
+lrwxrwxrwx  1 root   root          18 Jan 21 06:44 apt-add-repository -> add-apt-repository
+-rwxr-xr-x  1 root   root      113952 Oct 28 14:56 apt-cache
+-rwxr-xr-x  1 root   root       27264 Oct 28 14:56 apt-cdrom
+-rwxr-xr-x  1 root   root        5681 Aug 26  2014 apt-clone
+-rwxr-xr-x  1 root   root       18984 Oct 28 14:56 apt-config
+-rwxr-xr-x  1 root   root        1040 Jun 10  2014 aptdcon
+-rwxr-xr-x  1 root   root       23224 Oct 28 14:56 apt-extracttemplates
+-rwxr-xr-x  1 root   root      212720 Oct 28 14:56 apt-ftparchive
+-rwxr-xr-x  1 root   root      134968 Oct 28 14:56 apt-get
+lrwxrwxrwx  1 root   root          26 Oct 23 17:11 aptitude -> /etc/alternatives/aptitude
+-rwxr-xr-x  1 root   root        1939 Feb 17  2014 aptitude-create-state-bundle
+-rwxr-xr-x  1 root   root     4383088 Feb 17  2014 aptitude-curses
+-rwxr-xr-x  1 root   root        2850 Feb 17  2014 aptitude-run-state-bundle
+-rwxr-xr-x  1 root   root       11838 Oct 28 14:55 apt-key
+-rwxr-xr-x  1 root   root       47992 Oct 28 14:56 apt-mark
+-rwxr-xr-x  1 root   root       31256 Oct 28 14:56 apt-sortpkgs
+-rwxr-xr-x  1 root   root         273 Dec 11  2013 apturl
+-rwxr-xr-x  1 root   root        1544 Mar 15  2014 apturl-gtk
+-rwxr-xr-x  1 root   root       60432 Feb  9 04:36 ar
+-rwxr-xr-x  1 root   root       31360 Jan 13 20:50 arch
+-rwxr-xr-x  1 root   root        6360 Jul  3  2014 archdetect
+-rwxr-xr-x  1 root   root        1269 Jan 27  2014 archpath
+lrwxrwxrwx  1 root   root           5 Aug  7  2014 arecord -> aplay
+-rwxr-xr-x  1 root   root       23216 Jan 16  2014 arecordmidi
+-rwxr-xr-x  1 root   root       10456 Feb 18  2014 arm2hpdl
+-rwxr-xr-x  1 root   root       18920 May  7  2014 arping
+-rwxr-xr-x  1 root   root      352856 Feb  9 04:36 as
+-rwxr-xr-x  1 root   root       10320 Feb  7  2013 asciitopgm
+-rwxr-xr-x  1 root   root       18872 Jan 16  2014 aseqdump
+-rwxr-xr-x  1 root   root       18976 Jan 16  2014 aseqnet
+-rwxr-xr-x  1 root   root      159440 Dec 15  2013 aspell
+-rwxr-xr-x  1 root   root        2044 Dec 15  2013 aspell-import
+lrwxrwxrwx  1 root   root           9 Aug  7  2014 assistant -> qtchooser
+-rwsr-sr-x  1 daemon daemon     51464 Oct 21  2013 at
+-rwxr-xr-x  1 root   root       10336 Feb  7  2013 atktopbm
+-rwxr-xr-x  1 root   root        9184 Jan  6  2014 atobm
+-rwxr-xr-x  1 root   root        2725 Feb 25 15:48 atom
+lrwxrwxrwx  1 root   root           2 Oct 21  2013 atq -> at
+lrwxrwxrwx  1 root   root           2 Oct 21  2013 atrm -> at
+-rwxr-xr-x  1 root   root     7016208 Jun 19  2014 audacity
+-rwxr-xr-x  1 root   root       27232 Jan 13  2014 avahi-browse
+lrwxrwxrwx  1 root   root          12 Aug  7  2014 avahi-browse-domains -> avahi-browse
+-rwxr-xr-x  1 root   root       18912 Jan 13  2014 avahi-publish
+lrwxrwxrwx  1 root   root          13 Aug  7  2014 avahi-publish-address -> avahi-publish
+lrwxrwxrwx  1 root   root          13 Aug  7  2014 avahi-publish-service -> avahi-publish
+-rwxr-xr-x  1 root   root       14736 Jan 13  2014 avahi-resolve
+lrwxrwxrwx  1 root   root          13 Aug  7  2014 avahi-resolve-address -> avahi-resolve
+lrwxrwxrwx  1 root   root          13 Aug  7  2014 avahi-resolve-host-name -> avahi-resolve
+-rwxr-xr-x  1 root   root       14672 Jan 13  2014 avahi-set-host-name
+-rwxr-xr-x  1 root   root       14680 Feb 11  2014 average
+lrwxrwxrwx  1 root   root          21 Aug  7  2014 awk -> /etc/alternatives/awk
+-rwxr-xr-x  1 root   root       33509 Feb 23  2014 axi-cache
+-rwxr-xr-x  1 root   root         377 Dec  4  2011 azureus
+-rwxr-xr-x  1 root   root      257096 Mar 11  2014 baobab
+-rwxr-xr-x  1 root   root       35456 Jan 13 20:50 base64
+-rwxr-xr-x  1 root   root       27208 Jan 13 20:50 basename
+-rwxr-xr-x  1 root   root        6965 Oct  7 13:22 bashbug
+-rwxr-xr-x  1 root   root         152 Oct 21  2013 batch
+-rwxr-xr-x  1 root   root       85168 Mar 19  2014 bc
+-rwxr-xr-x  1 root   root        7296 Jan  6  2014 bdftopcf
+-rwxr-xr-x  1 root   root        7632 Jan  6  2014 bdftruncate
+lrwxrwxrwx  1 root   root          24 Jan 26 15:10 bibtex -> /etc/alternatives/bibtex
+-rwxr-xr-x  1 root   root      130032 Jan 22  2014 bibtex8
+-rwxr-xr-x  1 root   root      104960 Jan 22  2014 bibtex.original
+-rwxr-xr-x  1 root   root      134192 Jan 22  2014 bibtexu
+-rwxr-xr-x  1 root   root       10320 Feb  7  2013 bioradtopgm
+-rwxr-xr-x  1 root   root       90768 Jan  6  2014 bitmap
+-rwxr-xr-x  1 root   root    41680128 Mar 22  2014 blender
+-rwxr-xr-x  1 root   root    22978112 Mar 22  2014 blenderplayer
+-rwxr-xr-x  1 root   root       19136 Jan 28 14:19 bluetooth-agent
+-rwxr-xr-x  1 root   root       32136 Jan 28 15:32 bluetooth-sendto
+-rwxr-xr-x  1 root   root       31832 Jan 28 15:32 bluetooth-wizard
+-rwxr-xr-x  1 root   root        3933 Jan 28 14:19 bluez-simple-agent
+-rwxr-xr-x  1 root   root        2952 Jan 28 14:19 bluez-simple-service

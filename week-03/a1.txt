@@ -1,0 +1,8 @@
+The process is terminated to allow the others to continue.
+
+One common approach:
+    1. Given a list of processes in a cycle, pick the one with lowest priority
+    2. Pre-empt it
+    3. Let the processes that need the resources it was holding have them.
+      - There has to be a way to assure fairness to all processes.
+      - We need to keep track of how often a process is pre-empted and possibly increase its priority, if required.

@@ -1,0 +1,4 @@
+doskey ls=dir
+doskey rm=del
+doskey ifconfig=ipconfig
+doskey ps=tasklist

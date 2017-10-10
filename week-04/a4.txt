@@ -1,0 +1,3 @@
+1. Both Internal and External fragmentation.
+2. Your computer would eventually run out of memory.
+3. Your computer will slow down because there won't be enough room for large jobs.

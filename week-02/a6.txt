@@ -1,0 +1,1 @@
+The java and javac binary files are already set in the PATH and CLASSPATH variables in Ubuntu Linux.

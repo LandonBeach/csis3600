@@ -1,0 +1,21 @@
+Special characters:
+
+ ~ Home directory
+ # Comment
+ $ Variable
+ * Wild card
+ | Pipe
+ & Run process in the background
+ ; Shell command separator
+ > output redirection
+ < input redirection
+ ' strong quote
+ " weak quote
+
+
+Useful control keys:
+
+ Ctrl-C stops the current command
+ Ctrl-D end of file
+ Ctrl-S halts output to the screen
+ Ctrl-Z suspends a process

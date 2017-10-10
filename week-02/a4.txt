@@ -1,0 +1,3 @@
+The command 'firefox' is already set in Ubuntu Linux to open up the Firefox web browser.
+To add it as an alias in the .bashrc file, you simply add:
+alias firefox='path/to/firefox/executable'

@@ -1,0 +1,6 @@
+#! /bin/bash
+
+# usage: text2html infile out.html
+echo "<html><pre>" > $2
+cat $1 >> $2
+echo "</pre></html>" >> $2

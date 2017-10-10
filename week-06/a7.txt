@@ -1,0 +1,9 @@
+/etc/fstab - the file system table file that typically lists all of the available disk partitions, other data sources, and how they should be initialized.
+/etc/group -  the file that defines groups and the users associated with them.
+/etc/hosts - used to map hostnames to IP addresses.
+/etc/inittab - this file controls whatever happens when the system is rebooted or forced to change run levels.
+/etc/network.conf - used for network configurations.
+/etc/passwd - contains a list of the system accounts, and stores essential information which is required to login.
+/etc/profile - used to set system wide environment variables on users shells.
+/etc/init.d/rcS - allows you to run additional programs at boot time.
+/etc/X11/xorg.conf - a configuration file for Xorg X server.

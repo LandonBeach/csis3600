@@ -1,0 +1,23 @@
+Circular Wait:
+A set of 2 or more processes are each waiting for a resource held by another.
+
+Dead Lock:
+A problem occurring when the resources needed for job A to finish are held by job B which in turn is waiting for resources held by job A before it can finish. Both jobs are in a permanent "HOLD" state.
+
+Detection:
+When deadlock is detected by the OS, it needs to be able to resolve it.  The approach used is called a "recovery algorithm".
+
+Directed Graphs:
+To model the situation we draw a directed graph of the processes and resources.  If we find a cycle in this graph, we have deadlock. (This data structure is called the process resource graph).
+
+Mutual Exclusion:
+Only one process is allowed to have access to a resource at a given time.
+
+No Preemption:
+A process is allowed to hold onto resources while waiting for other resources to become available.
+
+Process Synchronization:
+The ability to detect and deal with the 4 conditions that lead to deadlock.
+
+Resource Holding:
+A process does not relinquish the resources it holds until its execution is completed, even if it's not using them because it's waiting for other resources.

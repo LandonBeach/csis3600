@@ -1,0 +1,11 @@
+(IMAGE)
+* Opened up .bashrc with the nano editor.
+
+(IMAGE)
+* Added an alias in the .bashrc file. Note: I'm running Ubuntu and I don't have the tasklist command.  If I did then the .bashrc file would say alias process='ps && tasklist'.
+
+(IMAGE)
+* Running the original ps command.
+
+(IMAGE)
+* "Refresh" the .bashrc rile and running the new alias.
